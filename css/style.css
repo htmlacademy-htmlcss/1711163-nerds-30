@@ -18,15 +18,15 @@
    margin: 0;
    padding: 0;
    font-family: "Roboto", sans-serif;
-   color: black;
+   color:#283136;
  }
 
  a {
    text-decoration: none;
-   color: black;
+   color: #283136;
  }
 
- .footer_text1 {
+ .footer_text_some_word {
    margin: 0;
    font-style: normal;
    font-weight: 700;
@@ -55,7 +55,7 @@
  }
 
  h1 {
-   font-style: Medium;
+   font-style: medium;
    font-size: 55px;
    line-height: 55px;
    font-weight: 500;
@@ -88,8 +88,10 @@
  }
 
  .container {
-   max-width: 1197px;
-   margin: 0 auto;
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
  }
 
  .header_nav_link {
@@ -107,6 +109,9 @@
    font-size: 16px;
    line-height: 30px;
    text-transform: uppercase;
+   display: flex;
+   justify-content: end;
+   align-items: flex-end
  }
 
  .header_nav_link:hover {
@@ -150,6 +155,7 @@
 
  .cart_img {
    margin-right: 10px;
+   margin-bottom:  10px; 
  }
 
  .header_logo>img {
@@ -248,19 +254,19 @@
    color: rgba(255, 255, 255, 0.3);
  }
 
- .aboutus {
+ .about-us {
    display: flex;
    justify-content: space-between;
  }
 
- .aboutus_text h2 {
+ .about-us_text h2 {
    font-style: normal;
    font-weight: 500;
    font-size: 45px;
    line-height: 45px;
  }
 
- .aboutus_text h4 {
+ .about-us_text h4 {
    margin-top: 40px;
    font-style: normal;
    font-weight: 700;
@@ -268,12 +274,12 @@
    line-height: 24px;
  }
 
- .aboutus_text ul li {
+ .about-us_text ul li {
    padding-top: 25px;
    list-style-type: none;
  }
 
- .aboutus_text li:before {
+ .about-us_text li:before {
    content: "";
    background-color: #FB565A;
    width: 25px;
@@ -287,7 +293,7 @@
    text-align: center;
  }
 
- .text_under_logo>ul>li {
+ .text_under_logo li {
    list-style-type: none;
  }
 
@@ -340,17 +346,11 @@
    opacity: 0.2;
  }
 
- .htmllogo a img:hover,
- .barberlogo a img:hover,
- .pinklogo a img:hover,
- .mishkalogo a img:hover {
+ .partners_logo:hover {
    opacity: 1;
  }
 
- .htmllogo a img:focus,
- .barberlogo a img:focus,
- .pinklogo a img:focus,
- .mishkalogo a img:focus {
+ .partners_logo:focus {
    opacity: 0.1;
  }
 
@@ -396,48 +396,42 @@
    margin-left: 63px;
    opacity: 0.2;
  }
-
- .map {
-   width: 1440px;
-   margin: 0 auto;
-   height: 416px;
-   position: relative;
-
- }
-
- .marker {
-   position: absolute;
-   left: 822px;
-   top: 86px;
- }
-
- .contacts {
-   top: 54px;
-   left: 140px;
-   padding: 50px;
-   background-color: white;
-   position: absolute;
- }
-
- .contacts h3 {
-   margin-top: 0;
- }
+.contacts {
+  padding: 50px;
+  background-color: #ffffff;
+}
+ .map{
+  position: relative;
+  height: 400px;
+}
+.map .container{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.contacts-map {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
  .btn_writeus {
-   margin-top: 37px;
-   width: 240px;
-   background-color: #FB565A;
- }
+  margin-top: 37px;
+  width: 240px;
+  background-color: #FB565A;
+}
 
- .btn_writeus:hover {
-   background-color: #E74246;
- }
+.btn_writeus:hover {
+  background-color: #E74246;
+}
 
- .btn_writeus:focus {
-   background-color: #D7373B;
-   color: rgba(255, 255, 255, 0.3);
- }
-
+.btn_writeus:focus {
+  background-color: #D7373B;
+  color: rgba(255, 255, 255, 0.3);
+}
  .footer {
    margin: 0 auto;
    padding-top: 68px;
@@ -451,7 +445,7 @@
    text-align: left;
  }
 
- .vk {
+ .social {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -461,59 +455,28 @@
    background-color: #E1E1E1;
  }
 
- .vk:hover {
-   background-color: #E74246;
- }
-
- .vk:focus {
-   background-color: #D7373B;
-   color: rgba(255, 255, 255, 0.3);
- }
 
  .fb {
-   display: flex;
-   justify-content: center;
-   align-items: center;
    margin-left: 9px;
-   width: 81px;
-   height: 81px;
-   border-radius: 50%;
-   background-color: #E1E1E1;
  }
 
- .fb:hover {
+ .social:hover {
    background-color: #E74246;
  }
 
- .fb:focus {
+ .social:focus {
    background-color: #D7373B;
    color: rgba(255, 255, 255, 0.3);
  }
 
  .inst {
-   display: flex;
-   justify-content: center;
-   align-items: center;
    margin-left: 9px;
-   width: 81px;
-   height: 81px;
-   border-radius: 50%;
-   background-color: #E1E1E1;
  }
 
- .inst:hover {
-   background-color: #E74246;
- }
-
- .inst:focus {
-   background-color: #D7373B;
-   color: rgba(255, 255, 255, 0.3);
- }
 
  .btn {
    display: block;
-   height: 50px;
-   color: white;
+   color: #ffffff;
    font-style: normal;
    font-weight: 500;
    font-size: 16px;
@@ -542,7 +505,7 @@
    line-height: 55px;
  }
 
- .main_main {
+ .page-content {
    margin-top: 55px;
    display: flex;
    flex-flow: row wrap;
@@ -631,7 +594,7 @@
  }
 
  .price-controls input {
-   width: 60px;
+   width: 80px;
    padding: 10px;
    margin-left: 10px;
    text-align: center;
@@ -664,6 +627,7 @@
    position: absolute;
    -webkit-appearance: none;
    -moz-appearance: none;
+   appearance: none;
  }
 
  .check_box {
@@ -671,22 +635,22 @@
    margin-left: -38px;
    width: 25px;
    height: 23px;
-   background-image: url(/img/checkbox-off.svg);
+   background-image: url(../img/checkbox-off.svg);
    background-repeat: no-repeat;
  }
 
  .check_input:checked+.check_box {
-   background-image: url(/img/checkbox-on.svg);
+   background-image: url(../img/checkbox-on.svg);
    background-repeat: no-repeat;
  }
 
  .check_input:checked:disabled+.check_box {
-   background-image: url(/img/checkbox-dis-check.svg);
+   background-image: url(../img/checkbox-dis-check.svg);
    background-repeat: no-repeat;
  }
 
  .check_input:disabled+.check_box {
-   background-image: url(/img/checkbox-dis.svg);
+   background-image: url(../img/checkbox-dis.svg);
    background-repeat: no-repeat;
  }
 
@@ -701,22 +665,22 @@
    margin-left: -38px;
    width: 25px;
    height: 25px;
-   background-image: url(/img/radio-off.svg);
+   background-image: url(../img/radio-off.svg);
    background-repeat: no-repeat;
  }
 
  .radio_input:checked+.radio_box {
-   background-image: url(/img/radio-on.svg);
+   background-image: url(../img/radio-on.svg);
    background-repeat: no-repeat;
  }
 
  .radio_input:checked:disabled+.radio_box {
-   background-image: url(/img/radio-dis-checksvg.svg);
+   background-image: url(../img/radio-dis-checksvg.svg);
    background-repeat: no-repeat;
  }
 
  .radio_input:disabled+.radio_box {
-   background-image: url(/img/radio-dis.svg);
+   background-image: url(../img/radio-dis.svg);
    background-repeat: no-repeat;
  }
 
@@ -824,7 +788,7 @@
 
  .product_item:hover {
    box-shadow: 0px 6px 16px rgba(0, 1, 1, 0.25);
-   background-color: #4D4D4D;
+   background-color: #eeeeee;
    border: none;
  }
 
@@ -838,7 +802,10 @@
  .product_hat input {
    transform: scale(1.3);
    margin-right: 10px;
- }
+   border-radius: 50%;
+   height: 15px;
+   background-color:#fff;
+   }
 
  .pages_numbers {
    margin-top: 55px;
@@ -847,6 +814,10 @@
    flex-wrap: wrap;
    text-align: center;
    margin-right: 11px;
+   padding-left: 0px;
+ }
+ .pages_numbers li{
+  list-style-type:none;
  }
 
  .btn_page {
@@ -857,6 +828,7 @@
    width: 50px;
    height: 50px;
    background-color: #EEEEEE;
+   
  }
 
  .btn_next {
@@ -893,3 +865,43 @@
    border: 3px solid #DBDBDB;
    background-color: white;
  }
+
+ .btn_submit {
+  border: none;
+  margin-top: 37px;
+  width: 240px;
+  background-color: #FB565A;
+}
+
+.btn_submit:hover {
+  background-color: #E74246;
+}
+
+.btn_submit:focus {
+  background-color: #D7373B;
+  color: rgba(255, 255, 255, 0.3);
+}
+.modal {
+  position: fixed;
+  margin:auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 960px;
+  display:block ;
+  background-color: #ffffff;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  padding:63px 100px 84px 100px;
+}
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+.appointment_name,
+.appointment_email {
+  width: 360px;
+}
+.appointment_text{
+  width: 760px;
+  height: 118px;
+}

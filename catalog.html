@@ -24,15 +24,13 @@
         <img src="img/nerds-logo.svg" width="65" height="160" alt="Логотипнёрдс">
       </a>
       <nav class="header_nav">
-        <a class="header_nav_link" href="index.html">Студия</a>
+        <a class="header_nav_link active_link" href="#">Студия</a>
         <a class="header_nav_link" href="#">Клиенты</a>
-        <a class="header_nav_link active_link" href="catalog.html">Магазин</a>
+        <a class="header_nav_link" href="catalog.html">Магазин</a>
         <a class="header_nav_link" href="#">Контакты</a>
       </nav>
-      <div class="header_cart">
-        <a class="header_cart_link" href="cart.html"><img class="cart_img" src="img/cart-icon.svg" width="15"
-            height="15"> Корзина</a>
-      </div>
+      <a class="header_cart_link" href="cart.html"><img class="cart_img" src="img/cart-icon.svg" width="15" height="15">
+        Корзина</a>
     </div>
   </header>
   <aside class="main_promo">
@@ -41,7 +39,7 @@
     </div>
   </aside>
   <main class="container">
-    <div class="main_main">
+    <div class="page-content">
       <div class="filter">
         <form method="GET" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-item ">
@@ -56,10 +54,10 @@
               </div>
               <div class="price-controls">
                 <label class="min-price">
-                  от <input type="number" name="min-price" value="0">
+                  от <input type="number" name="min-price" value="0" step="100" min="0" max="15000">
                 </label>
                 <label class="max-price">
-                  до <input type="number" name="max-price" value="15000">
+                  до <input type="number" name="max-price" value="15000" step="100" min="0" max="15000">
                 </label>
               </div>
             </div>
@@ -67,17 +65,17 @@
           <fieldset class="filter-item">
             <legend class="text_grid">Сетка:</legend>
             <label class="check option">
-              <input class="radio_input" type="radio" name="product-group" value="filter-adaptivnaya" checked>
+              <input class="radio_input" type="radio" name="product-group" value="filter-adaptive" checked>
               <span class="radio_box"></span>
               Адаптивная
             </label>
             <label class="check option">
-              <input class="radio_input" type="radio" name="product-group" value="filter-Fixirovanaya">
+              <input class="radio_input" type="radio" name="product-group" value="filter-fixed">
               <span class="radio_box"></span>
               Фиксированная
             </label>
             <label class="check option">
-              <input class="radio_input" type="radio" name="product-group" value="filter-Rezinovaya">
+              <input class="radio_input" type="radio" name="product-group" value="filter-flexible">
               <span class="radio_box"></span>
               Резиновая
             </label>
@@ -133,9 +131,9 @@
         <div class="products">
           <div class="product_item sedonaprod">
             <div class="product_hat">
-              <input type="radio">
-              <input type="radio">
-              <input type="radio">
+              <input type="button">
+              <input type="button">
+              <input type="button">
             </div>
             <img src="img/sedoniaprod.jpg" width="359" height="578" alt="Седония сайт">
           </div>
@@ -180,46 +178,65 @@
             <img src="img/kvastprod.jpg" width="359" height="578" alt="Кваст сайт">
           </div>
         </div>
-        <div class="pages_numbers">
-          <a class="btn_page active_page_one" href="">1</a>
-          <a class="btn_page" href="">2</a>
-          <a class="btn_page" href="">3</a>
-          <a class="btn_next" href="">
-            <div>Следующая</div>
-          </a>
-        </div>
+        <ul class="pages_numbers">
+          <li><a class="btn_page active_page_one" href="">1</a></li>
+          <li><a class="btn_page" href="">2</a></li>
+          <li><a class="btn_page" href="">3</a></li>
+          <li><a class="btn_next" href="">Следующая</a></li>
+        </ul>
       </div>
     </div>
     </div>
   </main>
-  <footer>
-    <div class="map">
-      <img src="img/map.jpg" width="1440" height="416" alt="map">
-      <img class="marker" src="img/map-marker.png" alt="marker">
+  <div class="map">
+    <div class="container">
       <div class="contacts">
         <h3>NЁRDS DESIGN STUDIO</h3>
-        <p class="contacts_text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8 <br><br> тел. +7 (812)
-          275-75-75</p>
+        <p class="contacts_text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+        <p> тел. +7 (812) 275-75-75</p>
         <a class="btn btn_writeus" href="#">Напишите нам</a>
       </div>
-      <div class="footer container">
-        <a href="http://vk.com" target="_blank">
-          <div class="vk"><img class="social_img" src="img/vk.svg" alt="vk"></div>
-        </a>
-        <a href="http://facebook.com" target="_blank">
-          <div class="fb"><img class="social_img" src="img/fb.svg" alt="fb"></div>
-        </a>
-        <a href="http://instagram.com" target="_blank">
-          <div class="inst">
-            <img src="img/insta.svg" alt="inst">
-          </div>
-        </a>
-        <div class="footer_text">
-          <p class="footer_text1">Давайте дружить, это выгодно!</p>
-          <p class="footer_text2">Скидка 10% для друзей из социальных сетей.</p>
-        </div>
+      <img class="marker" src="img/map-marker.png" alt="marker">
+    </div>
+    <div class="contacts-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.6531787302789!2d30.322317167615736!3d59.93856835094619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1614244650616!5m2!1sru!2sru"
+        width="100%" height="416" alt="map" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+  <footer>
+    <div class="footer container">
+      <a class="vk social" href="http://vk.com" target="_blank">
+        <img class="social_img" src="img/vk.svg" alt="vk">
+          </a> <a class="fb social" href="http://facebook.com" target="_blank">
+          <img class="social_img" src="img/fb.svg" alt="fb">
+      </a>
+      <a class="inst social" href="http://instagram.com" target="_blank">
+        <img src="img/insta.svg" alt="inst">
+      </a>
+      <div class="footer_text">
+        <p class="footer_text_some_word">Давайте дружить, это выгодно!</p>
+        <p class="footer_text_other_word">Скидка 10% для друзей из социальных сетей.</p>
       </div>
+    </div>
   </footer>
+  <section class="modal container">
+    <h3>Напишите нам</h3>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+    <p class="appointment_item">
+      <label for="appointment-name">Ваше имя:</label>
+      <input class="appointment_name" id="appointment-name" type="name" name="name" placeholder="Имя Фамилия">
+    </p>
+    <p class="appointment_item">
+      <label class="visually-hidden" for="email">Ваш email:</label>
+      <input class="appointment_email" id="email" type="email" name="email" placeholder="email@example.com">
+    </p>
+    <p class="appointment_item">
+      <label for="text">Текст письма:</label>
+      <input class="appointment_text" type="text" name="text" id="text" placeholder="В свободной форме" >
+    </p>
+    <button class="btn btn_submit" type="submit">отправить</button>
+    <button class="modal_close" type="button">Закрыть</button>
+  </section>
 </body>
 
 </html>

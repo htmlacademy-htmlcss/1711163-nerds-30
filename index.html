@@ -29,10 +29,8 @@
         <a class="header_nav_link" href="catalog.html">Магазин</a>
         <a class="header_nav_link" href="#">Контакты</a>
       </nav>
-      <div class="header_cart">
-        <a class="header_cart_link" href="cart.html"><img class="cart_img" src="img/cart-icon.svg" width="15"
-            height="15"> Корзина</a>
-      </div>
+      <a class="header_cart_link" href="cart.html"><img class="cart_img" src="img/cart-icon.svg" width="15" height="15">
+        Корзина</a>
     </div>
   </header>
   <aside class="main_promo">
@@ -69,8 +67,8 @@
         <a class="btn btn_gold" href="">Заказать</a>
       </div>
     </div>
-    <div class="aboutus">
-      <div class="aboutus_text">
+    <div class="about-us">
+      <div class="about-us_text">
         <h2>Мы — маленькая, но гордая <br> дизайн-студия из Краснодара.</h2>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет <br>
           превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -81,7 +79,7 @@
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </div>
-      <div class="aboutus_logo">
+      <div class="about-us_logo">
         <figure>
           <img src="img/nerds-illustration.jpg" width="300" height="208" alt="НердсЛОГО">
         </figure>
@@ -107,53 +105,56 @@
     <div class="partners">
       <div class="htmllogo">
         <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-          <img src="img/htmlacademylogo.png" alt="htmlacademylogo">
+          <img class="partners_logo" src="img/htmlacademylogo.png" alt="htmlacademylogo">
         </a>
       </div>
       <div class="barberlogo">
         <a href="" target="_blank">
-          <img src="img/borodinskilogo.png" alt="borodinskilogo">
+          <img class="partners_logo" src="img/borodinskilogo.png" alt="borodinskilogo">
         </a>
       </div>
       <div class="pinklogo">
         <a href="" target="_blank">
-          <img src="img/pinklogo.png" alt="pinklogo">
+          <img class="partners_logo" src="img/pinklogo.png" alt="pinklogo">
         </a>
       </div>
       <div class="mishkalogo">
         <a href="" target="_blank">
-          <img src="img/mishkalogo.png" alt="mishkalogo">
+          <img class="partners_logo" src="img/mishkalogo.png" alt="mishkalogo">
         </a>
       </div>
     </div>
   </main>
-  <footer>
-    <div class="map">
-      <img src="img/map.jpg" width="1440" height="416" alt="map">
-      <img class="marker" src="img/map-marker.png" alt="marker">
+  <div class="map">
+    <div class="container">
       <div class="contacts">
         <h3>NЁRDS DESIGN STUDIO</h3>
-        <p class="contacts_text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8 <br><br> тел. +7 (812)
-          275-75-75</p>
+        <p class="contacts_text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+        <p> тел. +7 (812) 275-75-75</p>
         <a class="btn btn_writeus" href="#">Напишите нам</a>
       </div>
-      <div class="footer container">
-        <a href="http://vk.com" target="_blank">
-          <div class="vk"><img class="social_img" src="img/vk.svg" alt="vk"></div>
-        </a>
-        <a href="http://facebook.com" target="_blank">
-          <div class="fb"><img class="social_img" src="img/fb.svg" alt="fb"></div>
-        </a>
-        <a href="http://instagram.com" target="_blank">
-          <div class="inst">
-            <img src="img/insta.svg" alt="inst">
-          </div>
-        </a>
-        <div class="footer_text">
-          <p class="footer_text1">Давайте дружить, это выгодно!</p>
-          <p class="footer_text2">Скидка 10% для друзей из социальных сетей.</p>
-        </div>
+      <img class="marker" src="img/map-marker.png" alt="marker">
+    </div>
+    <div class="contacts-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.6531787302789!2d30.322317167615736!3d59.93856835094619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1614244650616!5m2!1sru!2sru"
+        width="100%" height="416" alt="map" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+  <footer>
+    <div class="footer container">
+      <a class="vk social" href="http://vk.com" target="_blank">
+        <img class="social_img" src="img/vk.svg" alt="vk">
+        < </a> <a class="fb social" href="http://facebook.com" target="_blank">
+          <img class="social_img" src="img/fb.svg" alt="fb">
+      </a>
+      <a class="inst social" href="http://instagram.com" target="_blank">
+        <img src="img/insta.svg" alt="inst">
+      </a>
+      <div class="footer_text">
+        <p class="footer_text_some_word">Давайте дружить, это выгодно!</p>
+        <p class="footer_text_other_word">Скидка 10% для друзей из социальных сетей.</p>
       </div>
+    </div>
   </footer>
 </body>
 
