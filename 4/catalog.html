@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>NЁRDS DESIGN STUDIO</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  <base href="https://htmlacademy-htmlcss.github.io/1711163-nerds-30/4/">
+</head>
+
+<body>
+    <header class="main_header">
+        <div class="header container">
+            <a class="header_logo" href="index.html">
+                <img src="img/nerds-logo.svg" width="65" height="160" alt="Логотипнёрдс">
+            </a>
+            <nav class="header_nav">
+                <a class="header_nav_link " href="index.html">Студия</a>
+                <a class="header_nav_link" href="#">Клиенты</a>
+                <a class="header_nav_link active_link" href="catalog.html">Магазин</a>
+                <a class="header_nav_link" href="#">Контакты</a>
+            </nav>
+            <a class="header_cart_link" href="cart.html">Корзина</a>
+        </div>
+    </header>
+    <aside class="main_promo">
+        <div class="title_catalog container">
+            <h1 class="txt_shop">Магазин готовых шаблонов</h1>
+        </div>
+    </aside>
+    <main class="container">
+        <div class="page-content">
+            <div class="filter">
+                <form method="GET" action="https://echo.htmlacademy.ru">
+                    <fieldset class="filter-item ">
+                        <legend>Стоимость:</legend>
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar" style="width: 30%; margin-left: 20%;"></div>
+                                </div>
+                                <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
+                                <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+                            </div>
+                            <div class="price-controls">
+                                <label class="min-price">
+                                    от <input type="number" name="min-price" value="0" step="100" min="0" max="15000">
+                                </label>
+                                <label class="max-price">
+                                    до <input type="number" name="max-price" value="15000" step="100" min="0" max="15000">
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="filter-item">
+                        <legend class="text_grid">Сетка:</legend>
+                        <label class="check option">
+                            <input class="radio_input" type="radio" name="product-group" value="filter-adaptive" checked>
+                            <span class="radio_box"></span>
+                            Адаптивная
+                        </label>
+                        <label class="check option">
+                            <input class="radio_input" type="radio" name="product-group" value="filter-fixed">
+                            <span class="radio_box"></span>
+                            Фиксированная
+                        </label>
+                        <label class="check option">
+                            <input class="radio_input" type="radio" name="product-group" value="filter-flexible">
+                            <span class="radio_box"></span>
+                            Резиновая
+                        </label>
+                    </fieldset>
+                    <fieldset class="filter-item">
+                        <legend class="text_features">Особенности:</legend>
+                        <label class="check option">
+                            <input class="check_input" name="slider" type="checkbox" checked>
+                            <span class="check_box"></span>
+                            Слайдер
+                        </label>
+                        <label class="check option">
+                            <input class="check_input" name="block" type="checkbox">
+                            <span class="check_box"></span>
+                            <span class="check_text">Блок преимуществ</span>
+                        </label>
+                        <label class="check option">
+                            <input class="check_input" name="news" type="checkbox" checked disabled>
+                            <span class="check_box"></span>
+                            <span>Новости</span>
+                        </label>
+                        <label class="check option">
+                            <input class="check_input" name="galery" type="checkbox">
+                            <span class="check_box"></span>
+                            Галерея
+                        </label>
+                        <label class="check option">
+                            <input class="check_input" name="busket" type="checkbox">
+                            <span class="check_box"></span>
+                            Корзина
+                        </label>
+                    </fieldset>
+                    <button class="btn_show" type="submit">Показать</button>
+                </form>
+            </div>
+            <div>
+                <div class="sorting">
+                    <h6>Сортировать:</h6>
+                    <a class="sorting_item sorting_item_price" href="">по цене</a>
+                    <a class="sorting_item sorting_item_type" href="">по типу</a>
+                    <a class="sorting_item sorting_item_name" href="">по названию</a>
+                    <a class="triagle_down" href=""><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 10L0 0H11" fill="#231F20" />
+                        </svg></a>
+                    <a class="triagle_up" href=""><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.2">
+                                <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6" />
+                            </g>
+                        </svg></a>
+                </div>
+                <div class="products">
+                    <div class="product_item sedonaprod">
+                        <div class="product_hat">
+                            <input type="button">
+                            <input type="button">
+                            <input type="button">
+                        </div>
+                        <img src="img/sedoniaprod.jpg" width="359" height="578" alt="Седония сайт">
+                    </div>
+                    <div class="product_item pinkprod">
+                        <div class="product_hat">
+                            <input type="radio">
+                            <input type="radio">
+                            <input type="radio">
+                        </div>
+                        <img src="img/pinkprod.jpg" width="359" height="578" alt="Пинк сайт">
+                    </div>
+                    <div class="product_item borodinskiprod">
+                        <div class="product_hat">
+                            <input type="radio">
+                            <input type="radio">
+                            <input type="radio">
+                        </div>
+                        <img src="img/barberprod.jpg" width="359" height="578" alt="Бородинский сайт">
+                    </div>
+                    <div class="product_item mishkaprod">
+                        <div class="product_hat">
+                            <input type="radio">
+                            <input type="radio">
+                            <input type="radio">
+                        </div>
+                        <img src="img/mishkaprod.jpg" width="359" height="578" alt="Мишка сайт">
+                    </div>
+                    <div class="product_item aplusprod">
+                        <div class="product_hat">
+                            <input type="radio">
+                            <input type="radio">
+                            <input type="radio">
+                        </div>
+                        <img src="img/aprod.jpg" width="359" height="578" alt="А+ сайт">
+                    </div>
+                    <div class="product_item kvastprod">
+                        <div class="product_hat">
+                            <input type="radio">
+                            <input type="radio">
+                            <input type="radio">
+                        </div>
+                        <img src="img/kvastprod.jpg" width="359" height="578" alt="Кваст сайт">
+                    </div>
+                </div>
+                <ul class="pages_numbers">
+                    <li><a class="btn_page active_page_one" href="">1</a></li>
+                    <li><a class="btn_page" href="">2</a></li>
+                    <li><a class="btn_page" href="">3</a></li>
+                    <li><a class="btn_next" href="">Следующая</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <div class="map">
+        <div class="container">
+            <div class="contacts">
+                <h3>NЁRDS DESIGN STUDIO</h3>
+                <p class="contacts_text">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+                <p> тел. +7 (812) 275-75-75</p>
+                <a class="btn btn_writeus" href="#">Напишите нам</a>
+            </div>
+            <img class="marker" src="img/map-marker.png" alt="marker">
+        </div>
+        <div class="contacts-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.6531787302789!2d30.322317167615736!3d59.93856835094619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1614244650616!5m2!1sru!2sru" width="100%" height="416" alt="map" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    <footer>
+        <div class="footer container">
+            <a class="vk social" href="http://vk.com" target="_blank">
+                <img class="social_img" src="img/vk.svg" alt="vk">
+            </a> <a class="fb social" href="http://facebook.com" target="_blank">
+                <img class="social_img" src="img/fb.svg" alt="fb">
+            </a>
+            <a class="inst social" href="http://instagram.com" target="_blank">
+                <img src="img/insta.svg" alt="inst">
+            </a>
+            <div class="footer_text">
+                <p class="footer_text_some_word">Давайте дружить, это выгодно!</p>
+                <p class="footer_text_other_word">Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+        </div>
+    </footer>
+
+    <section class="modal container">
+        <h3>Напишите нам</h3>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="appointment_item">
+                <label for="appointment-name">Ваше имя:</label>
+                <input class="appointment_name" id="appointment-name" type="name" name="name" placeholder="Имя Фамилия">
+            </p>
+            <p class="appointment_item">
+                <label class="visually-hidden" for="email">Ваш email:</label>
+                <input class="appointment_email" id="email" type="email" name="email" placeholder="email@example.com">
+            </p>
+            <p class="appointment_item">
+                <label for="text">Текст письма:</label>
+                <input class="appointment_text" type="text" name="text" id="text" placeholder="В свободной форме">
+            </p>
+            <button class="btn btn_submit" type="submit">отправить</button>
+            <button class="modal_close" type="button">Закрыть</button>
+    </section>
+</body>
+
+</html>
